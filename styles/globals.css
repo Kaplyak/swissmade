@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,35 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.cat {
+  transition: 0.5s ease;
+}
+
+.cat:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.chocobg {
+  background-image: url(../public/category_images/cat-chocolate.jpg)
+}
+
+.cheesebg {
+  background-image: url(../public/category_images/cat-cheese.jpg)
+}
+
+.booksbg {
+  background-image: url(../public/category_images/cat-books.jpeg)
+}
+
+.watchesbg {
+  background-image: url(../public/category_images/cat-watches.jpg)
+}
+
+.knivesbg {
+  background-image: url(../public/category_images/cat-knives.jpg)
 }
