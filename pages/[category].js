@@ -22,7 +22,7 @@ export default function Category(props) {
             <Header />
             <CategoryCards />
             <div className="container mx-auto mb-5">
-                <h1 className="text-center text-4xl my-5">{props.cat}</h1>
+                <h1 className="text-center text-4xl my-5">{props.categoryQuery}</h1>
                 <div className="grid grid-cols-4">
                     {itemList}
                 </div>
@@ -35,11 +35,11 @@ export default function Category(props) {
 export async function getStaticPaths() {
     return {
         paths: [
-            { params: { category: "Chocolate" } },
-            { params: { category: "Cheese" } },
-            { params: { category: "Watches" } },
-            { params: { category: "Books" } },
-            { params: { category: "Swiss Army Knives" } },
+            { params: { category: "chocolate" } },
+            { params: { category: "cheese" } },
+            { params: { category: "watches" } },
+            { params: { category: "books" } },
+            { params: { category: "knives" } },
         ],
         fallback: false
     };
@@ -52,9 +52,18 @@ export async function getStaticProps(context) {
 
     const cat = context.params.category;
 
+    let categoryQuery = "";
+
+    if (cat == "knives") {
+        categoryQuery = "Swiss Army Knives";
+    } else {
+        categoryQuery = cat.charAt(0).toUpperCase() + cat.slice(1);
+    }
+
+
     const query = await prisma.category.findMany({
         where: {
-            name: cat,
+            name: categoryQuery,
         },
         include: {
             items: {
@@ -76,5 +85,5 @@ export async function getStaticProps(context) {
         price: item.price.toNumber().toFixed(2)
     }));
 
-    return { props: { cleanedItems, cat } };
+    return { props: { cleanedItems, categoryQuery } };
 }

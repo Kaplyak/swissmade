@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Search from '../icons/search';
+import SearchFunc from './searchfunc';
 import ShoppingCart from '../icons/cart';
 import UserCircle from '../icons/profile';
 
@@ -16,8 +17,10 @@ export default function Topbar() {
                 </Link>
             </div>
             <div className="flex justify-center items-center w-1/3 gap-x-3">
-                <a href="#"><Search /></a>
-                <a href="#"><ShoppingCart /></a>
+                <SearchFunc />
+                <Link href="/cart">
+                    <ShoppingCart />
+                </Link>
                 <a href="#"><UserCircle /></a>
             </div>
         </div>
