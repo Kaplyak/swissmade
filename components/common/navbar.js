@@ -8,7 +8,7 @@ export default function Navbar() {
             <Link href='#'>New</Link>
             <Link href='#'>Gift card</Link>
             <Link href='/about'>About</Link>
-            <Link href='#'>All</Link>
+            <Link href='/all'>All</Link>
         </nav>     
     )
 }
