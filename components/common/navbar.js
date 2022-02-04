@@ -7,7 +7,7 @@ export default function Navbar() {
             <Link href='#'>Popular</Link>
             <Link href='#'>New</Link>
             <Link href='#'>Gift card</Link>
-            <Link href='#'>About</Link>
+            <Link href='/about'>About</Link>
             <Link href='#'>All</Link>
         </nav>     
     )
