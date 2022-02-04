@@ -32,11 +32,6 @@ export default function Cart() {
         )
     })
     
-
-    console.log(cart[0]);
-    console.log(cart[1]);
-    
-
     return(
         <div>
             <Header />
