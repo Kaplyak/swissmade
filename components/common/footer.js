@@ -6,8 +6,8 @@ import Youtube from "../icons/yt";
 
 export default function Footer() {
     return(
-        <footer className="w-full bg-purple-500 text-white">
-            <div className="flex justify-center content-center py-5 gap-x-20">
+        <footer className="w-full bg-yellow-300 text-dark text-center mt-auto">
+            <div className="lg:flex justify-center content-center py-5 gap-x-20">
                 <div>
                     <p className="text-lg">About</p>
                     <ul className="flex flex-col">
@@ -30,7 +30,7 @@ export default function Footer() {
                     <div className="text-center">
                         <Image src="/swilogo.svg" alt="Vercel Logo" width={90} height={90} />
                     </div>
-                    <div className="flex gap-x-5">
+                    <div className="flex justify-center gap-x-5">
                         <a href="#"><Instagram /></a>
                         <a href="#"><Twitter /></a>
                         <a href="#"><Facebook /></a>

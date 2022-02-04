@@ -5,7 +5,7 @@ export default function Featured(props) {
     const items = props.items;
     
     return(
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             <ProductCard cartAdd={props.cartAdd} id={items[0].id} name={items[0].name} description={items[0].description} image={items[0].image} price={items[0].price} category={items[0].category} />
             <ProductCard cartAdd={props.cartAdd} id={items[1].id} name={items[1].name} description={items[1].description} image={items[1].image} price={items[1].price} category={items[1].category} />
             <ProductCard cartAdd={props.cartAdd} id={items[2].id} name={items[2].name} description={items[2].description} image={items[2].image} price={items[2].price} category={items[2].category} />

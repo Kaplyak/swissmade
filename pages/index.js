@@ -9,12 +9,6 @@ import Featured from '../components/ui/featured';
 import Footer from '../components/common/footer';
 
 export default function Home(cleanedItems) {
-
-  const [cart, setCart] = React.useState();
-
-  function cartAdd(id) {
-    console.log(id);
-  }
   
   const featured_items = [
     cleanedItems.cleanedItems[23], cleanedItems.cleanedItems[8], cleanedItems.cleanedItems[12], cleanedItems.cleanedItems[27], 
@@ -26,7 +20,7 @@ export default function Home(cleanedItems) {
   console.log(cleanedItems.cleanedItems)
 
   return (
-    <div>
+    <>
       <Header />
       <CategoryCards />
       <div className="container mx-auto mb-5">
@@ -35,7 +29,7 @@ export default function Home(cleanedItems) {
         <Featured cartAdd={() => cartAdd(props.item.id)} items={featured_items} />
       </div>
       <Footer />
-    </div>
+    </>
   )
 }
 

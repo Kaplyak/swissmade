@@ -12,7 +12,7 @@ export default function ProductPage(props){
       }
     
     return(
-        <div>
+        <div className="flex flex-col min-h-screen">
             <Header />
             <main className="container mx-auto pb-5">
                 <h1 className="text-center text-4xl mb-4">{props.item.name}</h1>
@@ -28,15 +28,17 @@ export default function ProductPage(props){
                 </div>
                 <div className="flex justify-between items-center">
                     <div className="text-center w-2/4">
-                        <p className="text-2xl">{props.item.price}</p>
+                        <p className="text-2xl">{props.item.price} CHF</p>
                     </div>
                     <div className="text-center w-2/4">
                         <AddToCart item={props.item} />
                     </div>
                 </div>
             </main>
-            <Link href="/cart">Go to cart</Link>
             <Footer />
+            <div id="notice" className="hidden absolute right-2 bottom-2 bg-red-500 text-white rounded p-4">
+                <p>Item added to cart!</p>
+            </div>
         </div>
     )
 }

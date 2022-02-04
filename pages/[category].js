@@ -23,7 +23,7 @@ export default function Category(props) {
             <CategoryCards />
             <div className="container mx-auto mb-5">
                 <h1 className="text-center text-4xl my-5">{props.categoryQuery}</h1>
-                <div className="grid grid-cols-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                     {itemList}
                 </div>
             </div>

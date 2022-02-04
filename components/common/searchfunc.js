@@ -48,9 +48,9 @@ export default function SearchFunc() {
         value={query}
       />
       { active && results.length > 0 && (
-        <ul>
+        <ul className="absolute bg-white">
           {results.map(({ id, name }) => (
-            <li key={id}>
+            <li key={id} className="py-1">
               <Link href="/product/[id]" as={`/product/${id}`}>
                 <a>{name}</a>
               </Link>
