@@ -22,7 +22,7 @@ export default function Cart() {
     
     const cartItems = cart.map(item => {
         return(
-            <div className="flex">
+            <div key={item.id} className="flex">
                 <img src={item.image} className="w-16" />
                 <div>
                     <p>{item.name}</p>
