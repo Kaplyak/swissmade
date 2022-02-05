@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Navbar() {
     return (
-        <nav className='flex justify-center gap-x-5 pb-5'>
+        <nav className='hidden lg:flex justify-center gap-x-5 pb-5'>
             <Link href='#'>On Sale</Link>
             <Link href='#'>Popular</Link>
             <Link href='#'>New</Link>
