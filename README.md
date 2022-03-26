@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Swissmade</h1>
 
-## Getting Started
+<br/>
 
-First, run the development server:
+## About
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+I made Swissmade to expand and showcase my skills as a front end engineer.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I used **NextJS**, **React**, and **JavaScript** to build the full structure of this project, including *dynamic URLs* for every product and category.<br/>
+To store product information, I created a **PostgreSQL** database and hosted it in **Heroku**.<br/>
+To style this project, I used **Tailwind CSS** and a little bit of custom CSS. Making use of Talwind breakpoints, I made Swissmade **fully responsive**.<br/>
+Finally, I deployed this project on **Vercel** to have an easy solution for Continuous Integration.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Tech stack
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [React](https://reactjs.org/)
+- [NextJS](https://nextjs.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Heroku](https://www.heroku.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vercel](https://vercel.com/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Features
 
-## Learn More
+:heavy_check_mark: &nbsp;&nbsp;Display products and product categories in dynamic pages.<br/>
+:heavy_check_mark: &nbsp;&nbsp;Working cart with React Hooks.<br/>
+:heavy_check_mark: &nbsp;&nbsp;Connection with a PostgreSQL database of products with NextJS' getStaticProps.<br/>
+:heavy_check_mark: &nbsp;&nbsp;Fully responsive.<br/>
+:heavy_check_mark: &nbsp;&nbsp;CI implementation with Vercel deployment.
 
-To learn more about Next.js, take a look at the following resources:
+## To-do list
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] Improve visual design of product page.
+- [ ] Implement pagination of products in category pages.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Demo
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Vercel deployment] (https://swissmade.vercel.app/)
