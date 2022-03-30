@@ -6,7 +6,7 @@ import Youtube from "../icons/yt";
 
 export default function Footer() {
     return(
-        <footer className="w-full bg-yellow-300 text-dark text-center mt-auto">
+        <footer className="w-full bg-blue-200 text-dark text-center mt-auto">
             <div className="lg:flex justify-center content-center py-5 gap-x-20">
                 <div>
                     <p className="text-lg">About</p>

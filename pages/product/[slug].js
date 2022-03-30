@@ -4,6 +4,7 @@ import AddToCart from '../../components/ui/addToCart';
 import CategoryCards from '../../components/ui/categories';
 import { PrismaClient, Prisma } from '@prisma/client';
 import Footer from '../../components/common/footer';
+import Image from 'next/image';
 
 export default function ProductPage(props){
 
@@ -18,7 +19,9 @@ export default function ProductPage(props){
                 <h1 className="text-center text-4xl mb-4">{props.item.name}</h1>
                 <div className="flex justify-center gap-5">
                     <div className="w-2/4 flex justify-center">
-                        <img className="w-96" src={`${props.item.image}`} />
+                        <div className="w-96 h-96 relative">
+                            <Image src={`${props.item.image}`} layout='fill' objectFit='contain' />
+                        </div>
                     </div>
                     <div className="w-2/4 mt-5 flex justify-center">
                         <div className="w-2/3 flex items-center">

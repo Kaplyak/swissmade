@@ -3,6 +3,7 @@ import Header from '../components/common/header';
 import CategoryCards from '../components/ui/categories';
 import { PrismaClient, Prisma } from '@prisma/client';
 import Footer from '../components/common/footer';
+import Image from 'next/image';
 
 export default function Cart() {
     const [cart, setCart] = useState([]);
@@ -23,7 +24,9 @@ export default function Cart() {
     const cartItems = cart.map(item => {
         return(
             <div key={item.id} className="flex">
-                <img src={item.image} className="w-16" />
+                <div className="relative w-16">
+                    <Image src={item.image} layout='fill' objectFit='contain' />
+                </div>
                 <div>
                     <p>{item.name}</p>
                     <p>{item.price} CHF</p>
