@@ -41,6 +41,7 @@ export default function SearchFunc() {
       ref={searchRef}
     >
       <input
+        className='border-gray border-2 rounded-md pl-1'
         onChange={onChange}
         onFocus={onFocus}
         placeholder='Search products'
@@ -48,7 +49,7 @@ export default function SearchFunc() {
         value={query}
       />
       { active && results.length > 0 && (
-        <ul className="absolute bg-white">
+        <ul className="absolute bg-white text-black">
           {results.map(({ id, name }) => (
             <li key={id} className="py-1">
               <Link href="/product/[id]" as={`/product/${id}`}>
