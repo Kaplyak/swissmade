@@ -25,7 +25,7 @@ export default function Home(cleanedItems) {
       <CategoryCards />
       <div className="container mx-auto mb-5">
         <hr />
-        <h2 className="text-center text-4xl my-5">Featured Swiss Products</h2>
+        <h2 className="underline font-bold text-center text-3xl my-5">FEATURED SWISS PRODUCTS</h2>
         <Featured cartAdd={() => cartAdd(props.item.id)} items={featured_items} />
       </div>
       <Footer />

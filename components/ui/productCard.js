@@ -8,11 +8,11 @@ export default function ProductCard(props) {
                 <div className="relative flex justify-center w-xl h-36">
                     <Image src={`${props.image}`} layout='fill' objectFit='contain' />
                 </div>
-                <div className="text-center mt-3">
+                <div className="font-karla400 text-center mt-3">
                     <h3>{props.name}</h3>
                 </div>
-                <div className="price mt-3">
-                    <p className="text-center">{props.price} CHF</p>
+                <div className="price mt-1">
+                    <p className="font-karla400 font-bold text-center">{props.price} CHF</p>
                 </div>
                 <ViewDetails id={props.id} />
             </div>
