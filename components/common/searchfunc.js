@@ -41,7 +41,7 @@ export default function SearchFunc() {
       ref={searchRef}
     >
       <input
-        className='border-gray border-2 rounded-md pl-1'
+        className='border-blue-200 border-2 rounded-md pl-1'
         onChange={onChange}
         onFocus={onFocus}
         placeholder='Search products'

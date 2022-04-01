@@ -16,22 +16,22 @@ export default function ProductPage(props){
         <div className="flex flex-col min-h-screen">
             <Header />
             <main className="container mx-auto pb-5">
-                <h1 className="text-center text-4xl mb-4">{props.item.name}</h1>
-                <div className="flex justify-center gap-5">
-                    <div className="w-2/4 flex justify-center">
+                <h1 className="text-center text-4xl lg:mb-5 font-bold">{props.item.name}</h1>
+                <div className="flex flex-col items-center lg:flex-row justify-center mb-5">
+                    <div className="w-3/4 lg:w-2/4 flex justify-center">
                         <div className="w-96 h-96 relative">
                             <Image src={`${props.item.image}`} layout='fill' objectFit='contain' />
                         </div>
                     </div>
-                    <div className="w-2/4 mt-5 flex justify-center">
+                    <div className="lg:w-2/4 lg:mt-5 flex justify-center">
                         <div className="w-2/3 flex items-center">
-                            <p>{props.item.description}</p>
+                            <p className='border-2 border-blue-200 rounded-md p-2 text-justify'>{props.item.description}</p>
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between items-center">
-                    <div className="text-center w-2/4">
-                        <p className="text-2xl">{props.item.price} CHF</p>
+                <div className="flex flex-col lg:flex-row justify-between items-center">
+                    <div className="text-center w-2/4 mb-2 lg:mb-0">
+                        <p className="text-3xl font-karla400 font-bold underline">{props.item.price} CHF</p>
                     </div>
                     <div className="text-center w-2/4">
                         <AddToCart item={props.item} />

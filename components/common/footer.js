@@ -39,7 +39,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="text-center">
-                <small>Made by <a href="#">Kevin Pernía</a> as a portfolio project.</small>
+                <small>Made by <a href="https://github.com/Kaplyak">Kevin Pernía</a> as a portfolio project.</small>
             </div>
         </footer>
     )
