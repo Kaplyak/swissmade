@@ -20,16 +20,21 @@ export default function Cart() {
         sessionStorage.setItem('cart', JSON.stringify(cart))
     }, [cart])
 
+    const totalPrice = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+        totalPrice += Number(cart[i].price);
+    }
     
     const cartItems = cart.map(item => {
         return(
-            <div key={item.id} className="flex">
+            <div key={item.id} className="flex mb-2">
                 <div className="relative w-16">
                     <Image src={item.image} layout='fill' objectFit='contain' />
                 </div>
                 <div>
                     <p>{item.name}</p>
-                    <p>{item.price} CHF</p>
+                    <p className="font-bold">{item.price} CHF</p>
                 </div>
             </div>
         )
@@ -39,9 +44,15 @@ export default function Cart() {
         <div className="flex flex-col min-h-screen">
             <Header />
             <main className="container mx-auto flex-grow">
-                <h1 className="text-center">Your cart</h1>
+                <h1 className="text-center mb-2">Your cart</h1>
                 <div>
                     {cartItems}
+                </div>
+                <div className="text-center font-bold underline mb-10">
+                    <p>Total: {totalPrice} CHF</p>
+                    <button className="text-center bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full mt-3">
+                        Check out
+                    </button>
                 </div>
             </main>
             <Footer />

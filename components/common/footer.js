@@ -11,19 +11,19 @@ export default function Footer() {
                 <div>
                     <p className="text-lg">About</p>
                     <ul className="flex flex-col">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Our story</a></li>
-                        <li><a href="#">Made in Switzerland</a></li>
-                        <li><a href="#">SwissMade VIP</a></li>
+                        <li><a href="/about">Contact</a></li>
+                        <li><a href="/about">Our story</a></li>
+                        <li><a href="/about">Made in Switzerland</a></li>
+                        <li><a href="/about">SwissMade VIP</a></li>
                     </ul>
                 </div>
                 <div>
                     <p className="text-lg">Help center</p>
                     <ul className="flex flex-col">
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Refunds</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Payments</a></li>
+                        <li><a href="/about">Shipping</a></li>
+                        <li><a href="/about">Refunds</a></li>
+                        <li><a href="/about">FAQ</a></li>
+                        <li><a href="/about">Payments</a></li>
                     </ul>  
                 </div>
                 <div className="flex flex-col">
@@ -31,10 +31,10 @@ export default function Footer() {
                         <Image src="/swilogo.svg" alt="Vercel Logo" width={90} height={90} />
                     </div>
                     <div className="flex justify-center gap-x-5">
-                        <a href="#"><Instagram /></a>
-                        <a href="#"><Twitter /></a>
-                        <a href="#"><Facebook /></a>
-                        <a href="#"><Youtube /></a>
+                        <a href="/about"><Instagram /></a>
+                        <a href="/about"><Twitter /></a>
+                        <a href="/about"><Facebook /></a>
+                        <a href="/about"><Youtube /></a>
                     </div>
                 </div>
             </div>

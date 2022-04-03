@@ -10,7 +10,7 @@ export default function ProductPage(props){
 
     function cartAdd(id) {
         console.log(id);
-      }
+    }
     
     return(
         <div className="flex flex-col min-h-screen">
@@ -39,9 +39,6 @@ export default function ProductPage(props){
                 </div>
             </main>
             <Footer />
-            <div id="notice" className="hidden absolute right-2 bottom-2 bg-red-500 text-white rounded p-4">
-                <p>Item added to cart!</p>
-            </div>
         </div>
     )
 }
