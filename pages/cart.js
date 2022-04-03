@@ -36,9 +36,9 @@ export default function Cart() {
     })
     
     return(
-        <div>
+        <div className="flex flex-col min-h-screen">
             <Header />
-            <main className="container mx-auto">
+            <main className="container mx-auto flex-grow">
                 <h1 className="text-center">Your cart</h1>
                 <div>
                     {cartItems}

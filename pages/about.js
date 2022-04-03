@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export default function About() {
     return(
-        <>
+        <div className="flex flex-col min-h-screen">
             <Header />
-            <main className="container mx-auto">
+            <main className="container mx-auto flex-grow">
                 <h1 className="text-center text-4xl">About SwissMade</h1>
-                <p>SwissMade was made by me (Kevin Pernía) as a portfolio project to showcase a range of skill abilities.</p>
+                <p>SwissMade was made by me (Kevin Pernía) as a portfolio project to showcase a range of skills and abilities.</p>
                 <p>I built this project using the following tech stack:</p>
                 <div className="flex justify-around items-center p-5 my-5 border rounded-md">
                     <div>
@@ -30,7 +30,7 @@ export default function About() {
                 </div>
             </main>
             <Footer />
-        </>
+        </div>
         
     )
 }
